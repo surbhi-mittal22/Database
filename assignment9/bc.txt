@@ -1,0 +1,22 @@
+
+
+     1.	You should identify insertion, update, and deletion anomalies in the sample rows of the big patient table shown in Table 1. You should identify one example of each type of anomaly. The combination of VisitNo and ProvNo is the only unique column(s) for the table.
+Table 1: Sample Rows for the Big Patient Table
+VisitNo	VisitDate 	PatNo	PatAge	PatCity	PatZip	ProvNo	ProvSpecialty	Diagnosis
+V10021	2/13/2018	P1	36	DENVER	80217	D1	INTERNIST	EAR INFECTION
+V10021	2/13/2018	P1	36	DENVER	80217	D2	NURSE PRACTITIONER	INFLUENZA
+V93030	2/20/2018	P3	17	ENGLEWOOD	80113	D2	NURSE PRACTITIONER	PREGNANCY
+V82110	2/18/2018	P2	60	BOULDER	85932	D3	CARDIOLOGIST	MURMUR
+
+    
+    Ans:-
+          1. Insertion anomaly:
+It is necessary to know a visit and an provider because the combination of VisitNo and
+ProvNo is the primary key.
+
+2. Update anomaly:
+ If we change ProvSpecialty of ProvNo D2, two rows must be changed.
+
+3. Deletion anomaly:
+If we delete the provider of D2 in V10021 , we lost the information about patient P1 and
+visit V10021
