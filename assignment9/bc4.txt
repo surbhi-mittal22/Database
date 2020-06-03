@@ -1,0 +1,16 @@
+  4.	For the big order database table in Table 3, you should list FDs with the column OrdNo as the determinant.  For each FD, you should identify at least one pair of sample rows that falsify it or indicate that no falsification example exists for the FD. Remember that it takes two rows to falsify an FD in which the LHS is the same in both rows, but the RHS is different in both rows.
+Table 3: Sample Rows for the Big Order Database Table
+OrdNo	ItemNo	QtyOrd	CustNo	CustBal	CustDisc	ItemPrice	OrdDate 
+O1	I1	10	C1	100	0.10	10	1/15/2018
+O1	I2	10	C1	100	0.10	20	1/15/2018
+O2	I3	5	C2	200	0.05	30	1/16/2018
+O2	I4	10	C2	200	0.05	40	1/16/2018
+O3	I1	10	C1	100	0.10	10	1/17/2018
+
+Ans:- OrdNo → ItemNo (1,2), (3,4)
+OrdNo → QtyOrd (3,4)
+OrdNo → CustNo None
+OrdNo → CustBal None
+OrdNo → CustDisc None
+OrdNo → ItemPrice (1,2), (3,4)
+OrdNo → OrdDate None
